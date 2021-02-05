@@ -6,6 +6,10 @@
 <title>Page Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
@@ -22,7 +26,7 @@ body {
   padding: 80px;
   text-align: center;
   background: #1abc9c;
-  color: orange;
+  color: #ffe135;
 }
 
 /* Increase the font size of the heading */
@@ -93,7 +97,17 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background-image: url("https://the-mathstutor.com/wp-content/uploads/2019/09/cropped-342656-math-background-2048x2048-image-1.jpg");
+  border-top: red;
+  border-left: white;
+  border-right: white;
+  border-bottom: white;
+  border-style: solid;
+  opacity:0.75;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ color:#ffe135;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -120,23 +134,45 @@ body {
 .resizedimg{
   width:90%;
 }
+.resizedimg2{
+  width:25%;
+}
+.textfonthead{
+  font-family: 'Nunito Sans', sans-serif;
+}
+.textfontbody{
+  font-family: 'Quicksand', sans-serif;
+  font-size:1.75vw;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.pricecolumn{
+  column-gap: 50px;
+}
 </style>
 </head>
 <body>
 
-<div class="header header-background">
-  <h1><b>Angelia's Learning Center</b></h1>
+<div class="header header-background textfonthead">
+  
+  <h1>
+    <div class="card">
+      <img src="logo.png" class="resizedimg2">
+      <h1 style= "font-size: 0.75vw;"> Logo designed and made by Rachel Laurentia</h1>
+    </div>
+    <b style="font-size: 4vw;">Angelia's Learning Center</b></h1>
   <p style = "font-size: x-large; "><b>Math, English, and Science</b></p>
 </div>
 
-<div class="navbar">
+<div class="navbar textfontbody">
   <a href="#intro">About Us</a>
   <a href="#programs">Programs</a>
   <a href="#prices">Prices</a>
   <a href="#Contact" class="right">Contact Us</a>
 </div>
 
-<div class="row">
+<div class="row textfontbody">
 
   <div class="side">
     <section id="intro">
@@ -152,40 +188,139 @@ body {
       I helped them go through obstacles in their studies, helped them understand the materials.
       
     </p>
-    <img src="https://www.eschoolnews.com/files/2015/10/shutterstock_179296106.jpg" class="resizedimg">
+    <!-- <img src="https://www.eschoolnews.com/files/2015/10/shutterstock_179296106.jpg" class="resizedimg"> -->
     <br>
-    <!-- <img src="">
-    <br>
-    <div class="fakeimg" style="height:60px;">Image</div> -->
     </section>
   </div>
   <div class="main">
     <section id="programs">
     <h2>Programs</h2>
-    <img src="">
+    <img src="poster.png"  class="resizedimg">
+    <p style= "font-size: x-small;">Designed and made by Rachel Laurentia</p>
     <p>In Angelia's Learning Center, we offer <B>MATH</B>, <b>SCIENCE</b>, and <b>ENGLISH</b> tutoring.
-      Any student that needs help with any subject offered can book an appointment through text or email provided below.
+      Our 1-hour sessions are based on individual needs.
+      Listed is the programs that we offer for each subject:
       <br>
+      <div class="row">
+        <div class="column">
+          <b>MATH</b>
+        <ul>
+          <li>Basic Arithmetic</li>
+          <li>Pre-Algebra</li>
+          <li>Algebra 1</li>
+          <li>Algebra 2</li>
+          <li>Geometry</li>
+          <li>Pre-Calculus</li>
+          <li>Calculus</li>
+        </ul>
+        </div>
+        <div class="column">
+          <b>SCIENCE</b>
+        <ul>
+          <li>Biology</li>
+          <li>Chemistry</li>
+          <li>Physics</li>
+        </ul>
+        </div>
+        <div class="column">
+          <b>ENGLISH</b>
+          <ul>
+            <li>K-12
+              <ul>
+                <li>Reading</li>
+                <li>Listening</li>
+                <li>Writing</li>
+              </ul>
+            </li>
+            <li>College
+              <ul>
+                <li>Critical Thinking</li>
+                <li>Writing and Composition</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </p>
     <br>
   </section>
     <section id="prices">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>Prices</h2>
+    
+    
+    <div class="card">
+      <div class="row">
+        <div class="column pricecolumn" >
+        <p style="font-size: 5vw;"><b>$ 25</b></p>   
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <p style="font-size: 3vw; margin:0;">&nbsp;&nbsp;Per 1-hour Session</p>
+          <p style="font-size:3vw; margin:0;">&nbsp;&nbsp;Per student</p>
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 1.5vw;"><a href="#Contact">Contact Us</a> for more information.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="column pricecolumn" >
+        <p style="font-size: 5vw;"><b>$ 100</b></p>   
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <p style="font-size: 3vw; margin:0;">&nbsp;&nbsp;For <b>5</b> 1-hour Sessions</p>
+          <p style="font-size:3vw; margin:0;">&nbsp;&nbsp;Per student</p>
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 1.5vw;"><a href="#Contact">Contact Us</a> for more information.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="column pricecolumn" >
+        <p style="font-size: 5vw;"><b>$ 195</b></p>   
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <p style="font-size: 3vw; margin:0;">&nbsp;&nbsp;For <b>10</b> 1-hour Sessions</p>
+          <p style="font-size:3vw; margin:0;">&nbsp;&nbsp;Per student</p>
+        </div>
+        <div class="column">
+          <br>
+          <br>
+          <br>
+          <br>
+          <p style="font-size: 1.5vw;"><a href="#Contact">Contact Us</a> for more information.</p>
+        </div>
+      </div>
+      
+    </div>
     </section>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
   </div>
 </div>
 <section id="Contact"
-<div class="footer">
-  <h2>Footer</h2>
+<div class="footer textfontbody">
+  <h2 style="font-size: 6vw;">
+    <b>Contact Us</b>
+  </h2>
+  <p style="font-size: 4vw;">Phone: +1 (626) 829 2122</p>
+  <p style="font-size: 4vw;">Email: angeliasjafrii@gmail.com</p>
 </div>
 <!-- Code injected by live-server -->
 <script type="text/javascript">
